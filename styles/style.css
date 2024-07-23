@@ -79,7 +79,7 @@ a{
 }
 
 #dropdown:hover #dropdown_content{
-    overflow: auto;
+    /* overflow: auto; */
     display: block;
     /* background-color: var(--alternate-secondary-background-color); */
 }
