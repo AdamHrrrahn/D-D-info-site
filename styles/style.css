@@ -170,7 +170,6 @@ tr{
     vertical-align: top;
     text-align: left;
     color: #442A0B;
-    /* border: 2px solid var(--header-color); */
 }
 
 table, th, td {
@@ -195,14 +194,12 @@ tr a {
 
 #item_content p{
     margin: 10px 10px;
-    /* margin-bottom: 10px; */
     font-size: 1em;
 }
 
 table table {
     margin: 20px;
-    max-width: calc(100%-20px);
-    overflow: hidden;
+    width: 80%;
 }
 
 
