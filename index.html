@@ -9,19 +9,25 @@
 <body>
     <header>
         <img src="Images/logo.png" alt="Logo">
-        <nav>
+        <nav class="navbar">
             <a href="index.html">Home</a>
-            <a href="">Classes</a>
-            <a href="">Races</a>
-            <a href="">Spells</a>
-            <a href="">Monsters</a>
+            <a href="list.html?val=classes">Classes</a>
+            <a href="list.html?val=races">Races</a>
+            <a href="list.html?val=spells">Spells</a>
+            <a href="list.html?val=monsters">Monsters</a>
+            <div id="dropdown">
+                <p id="dropdown_title">Other &#x25BC</p>
+                <div id="dropdown_content">
+                    <a href="list.html?val=equipment">Equipment</a>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <h1>Welcome to The D&D Info site</h1>
         <p>Use the links at the top of the page to acces the information you seek. These links will take you to a list of all the available entries under the specified category.</p>
     </main>
-    <footer>
+    <footer id="home_footer">
         <a href="https://www.dndbeyond.com/">
             <img src="Images/D&D_beyond_logo.jpg" alt="D&D Beyond Logo">
         </a>

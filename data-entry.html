@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/list.js"></script>
+    <script src="scripts/data-entry.js"></script>
 </head>
 <body>
     <header>
@@ -26,16 +26,9 @@
     </header>
     <main>
         <p id="error_message">Unable to Fetch data. Please refresh page or try again later.</p>
-        <div id="list_div">
-            <div id="list_container">
-            </div>
-            <div id="button_line">
-                <button id="beginning" >&lt;&lt;</button>
-                <button id="previous">&lt;</button>
-                <select id="page_number"></select>
-                <button id="next">&gt;</button>
-                <button id="end">&gt;&gt;</button>
-            </div>
+        <div id="item_content">
+            <h1 id="entry_name"></h1>
+            <table id="data_table"></table>
         </div>
     </main>
     <footer id="footer">
@@ -45,3 +38,4 @@
     </footer>
 </body>
 </html>
+

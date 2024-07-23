@@ -46,6 +46,44 @@ a{
     text-decoration: none;
 }
 
+#dropdown{
+    padding: 0;
+    position: relative;
+    display: inline-block;
+}
+
+#dropdown_title{
+    color: var(--secondary-header-color);
+    font-size: 2.5em;
+    font-family: var(--heading-font);
+    margin: 0;
+}
+
+#dropdown_content{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    background-color: var(--header-color);
+}
+
+#dropdown_content a{
+    color: var(--secondary-header-color);
+    display: block;
+    border: var(--secondary-header-color);
+    margin: 0 5px;    
+}
+
+#dropdown:hover{
+    background-color: var(--alternate-secondary-background-color);
+}
+
+#dropdown:hover #dropdown_content{
+    overflow: auto;
+    display: block;
+    /* background-color: var(--alternate-secondary-background-color); */
+}
+
 header img {
     width: 200px;
     margin: 25px;
@@ -72,14 +110,112 @@ p{
 footer{
     background-color: var(--header-color);
     margin: 0;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     height: 70px;
+}
+
+#home_footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 footer img {
     width: 50px;
     margin: 10px;
+}
+
+#error_message {
+    display: none;
+}
+
+#button_line{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#beginning {
+    grid-column: 1;
+}
+
+#previous {
+    grid-column: 2;
+}
+
+#page_number{
+    grid-column: 3;
+}
+
+#next {
+    grid-column: 4;
+}
+
+#end {
+    grid-column: 5;
+}
+
+#list_container a, #page_number{
+    font-family: var(--paragraph-font);
+    color: var(--header-color);
+    font-size: 2em;
+}
+
+#list_div{
+    overflow: auto;
+    margin: 0 10%;
+}
+
+tr{
+    font-family: var(--paragraph-font);
+    vertical-align: top;
+    text-align: left;
+    color: #442A0B;
+    /* border: 2px solid var(--header-color); */
+}
+
+table, th, td {
+    border: 1px solid var(--header-color);
+    border-collapse: collapse;
+}
+
+table {
+    margin: 0 10%;
+    width: 80%;
+}
+tr a {
+    font-family: var(--paragraph-font);
+    color: var(--header-color);
+}
+
+.first_collumn {
+    width: 0;
+    white-space: nowrap;
+    padding: 5px 10px
+}
+
+#item_content p{
+    margin: 10px 10px;
+    /* margin-bottom: 10px; */
+    font-size: 1em;
+}
+
+table table {
+    margin: 20px;
+    max-width: calc(100%-20px);
+    overflow: hidden;
+}
+
+
+table table th, #spell_table{
+    width: 0;
+    white-space: nowrap;
+}
+
+
+#item_content{
+    margin-bottom: 80px;
+}
+
+table img {
+    max-width: 50vw;
 }
